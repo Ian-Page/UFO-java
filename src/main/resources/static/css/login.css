@@ -1,0 +1,306 @@
+
+body {
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  background-image: url("https://images.hdqwalls.com/download/milky-way-5k-hd-3840x2160.jpg");
+  	
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+}
+.container1{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.login-box {
+ 
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+ 
+  background: rgba(0,0,0,.8);
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 20px #664DB2;
+  border-radius: 10px;
+  border-color: #664DB2;
+  border-style: solid;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #664DB2;
+  
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+  
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #664DB2;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #664DB2;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #664DB2;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #664DB2;
+  font-size: 12px;
+}
+
+.login-box form .a2 {
+  position: relative;
+  display: inline-block;
+  padding: 5px 5px;
+  color: #664DB2;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 0px;
+  letter-spacing: 4px;
+  opacity: .9;
+  
+}
+
+.login-box .a3:hover {
+  background: #664DB2;
+  color: black;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #664DB2,
+              0 0 20px #664DB2,
+              0 0 20px #664DB2,
+              0 0 20px #664DB2;
+              
+}
+.login-box .a2:hover {
+  background: #664DB2;
+  color: black;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px #664DB2,
+              0 0 20px #664DB2,
+              0 0 20px #664DB2,
+              0 0 20px #664DB2;
+              
+}
+
+.login-box .a2 span {
+  position: absolute;
+  display: block;
+}
+
+.login-box .a2 span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #664DB2);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box .a2  span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #664DB2);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box .a2 span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #664DB2);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box .a2 span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #664DB2);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+.glow {
+  font-size: 30px;
+  color: #664DB2;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+  from {
+    text-shadow: 0 0 10px #664DB2, 0 0 20px #664DB2, 0 0 30px #664DB2;
+  }
+  to {
+    text-shadow: 0 0 10px #664DB2, 0 0 20px #664DB2;
+  }
+}
+
+.a2{
+	padding: 10px;
+}
+
+.a3{
+	background:none;
+	border: none;
+	  letter-spacing: 4px;
+
+	color: #664DB2;
+  font-size: 16px;
+  padding: 10px;
+}
+.input:focus{
+
+  top: -20px;
+  left: 0;
+  color: #664DB2;
+  font-size: 18px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding:  20px;
+  box-sizing: border-box;
+  border: 2px solid #664DB2;
+  border-radius: 4px;
+  background-color: #000000;
+  font-size: 16px;
+  resize: none;
+  font-family: sans-serif;
+ color: #664DB2;
+ opacity: .9;
+}
+nummber{
+	color: #664DB2;
+}
+.logo .main{
+	 font-family: "Exo 2", sans-serif;
+}
+.container3{
+	display: flex;
+	justify-content: center;
+}
+li {
+  list-style-type: none;
+ }
+body {
+  text-align: center;
+  cursor: pointer;
+  color:  #664DB2;
+}
+.cursor {
+  /* i took out width and height ,ian */
+  width: 30px;
+  height: 0px;
+  border: 10px solid #222333;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  pointer-events: none;
+  background-color: #664DB2;
+  box-shadow:  0px 0px 10px 3px #664DB2;
+
+
+  	
+ 
+}
+
+.cursoreffect {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border: 1px solid #664DB2;
+  box-shadow: 0 0 10px #664DB2, 0 0 40px #664DB2, 0 0 80px #664DB2;
+  border-radius: 50%;
+  position: absolute;
+  animation: cursorPulse 1s;
+}
+
+@keyframes cursorPulse {
+  0% {-webkit-transform: scale(1.0); opacity: 1;}
+  100% {-webkit-transform: scale(3.0); opacity: 0;}
+}
+
+.errors {
+	color:  #664DB2;
+	margin: 10px;
+	height: 50px;
+}
+.logologin{
+	background-color: black ;
+	opacity: .7;
+	
+}
